@@ -4,8 +4,8 @@ import './App.css';
 
 const App = () => (
     <div className="App">
-        <h1>hello, world</h1>
+        <h1>exellent hello, world</h1>
     </div>
-)
+);
 
 export default hot(module)(App);
