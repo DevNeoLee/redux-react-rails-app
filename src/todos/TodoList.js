@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 import NewTodoForm from './NewTodoForm';
 import TodoListItem from './TodoListItem';
 import { removeTodo } from './actions';
-import TodoListItem from './TodoListItem';
 
-const TodoList = ({ todos = [{ text: 'hello'}] }) => (
+
+const TodoList = ({ todos = [], onRemovePressed }) => (
     <div className="list-wrapper">
         <NewTodoForm />
-        { todos.map(todo => <TodoListItem todo={todo} />)}
+        
+        {todos.map(todo => <TodoListItem todo={todo} key={todos.indexOf(todo)} onRemovePressed={onRemovePressed} />)}
     </div>
 );
 
@@ -16,7 +17,7 @@ const mapStateToProps = state => ({
      todos: state.todos,
 });
 
-const mapDispatchToProps = dipatch => ({
+const mapDispatchToProps = dispatch => ({
     onRemovePressed: text => dispatch(removeTodo(text)),
 });
 
