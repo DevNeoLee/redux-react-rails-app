@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { createTodo } from './actions';
+import './NewTodoForm.css'
 
 const NewTodoForm = ({ todos, onCreatePressed }) => {
     const [inputValue, setInputValue] = useState('');
 
     return (
         <div className="new-todo-form">
-            <input 
+            <input  
                 className="new-todo-input" 
                 type="text" 
                 placeholder = "Type your new todo here"

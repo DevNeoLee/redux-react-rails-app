@@ -13,6 +13,7 @@ const persistConfig = {
     storage,
     stateReconciler: autoMergeLevel2,
 }
+
 const rootReducer = combineReducers(reducers);
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 

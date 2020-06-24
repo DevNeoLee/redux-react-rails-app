@@ -1,0 +1,35 @@
+.todo-item-container {
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0 20px 0;
+    /* width: 50%; */
+    margin: 0px 210px 0 210px;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  1px 1px 2px darkgray, 5px 0 10px lightgray, 0 0 2px darkgray;
+}
+
+.buttons-container {
+    text-align: center;
+}
+
+.completed-button {
+    background-color: lightyellow;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.remove-button {
+    background-color: lightcoral;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: 100px;
+    padding: 10px;
+    font-size: 18px;
+}
